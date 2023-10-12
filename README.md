@@ -1,5 +1,5 @@
 # ZMK Firmware: Personal fork
-This is my personal ZMK fork containing various experimental features based on [urob's mod] (https://github.com/urob/zmk)
+This is my personal ZMK fork containing various experimental features based on [urob's mod](https://github.com/urob/zmk)
 
 Below is a list of features currently included in the `main` branch _on top of_
 the official ZMK master branch.

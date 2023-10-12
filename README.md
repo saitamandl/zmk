@@ -1,12 +1,9 @@
 # ZMK Firmware: Personal fork
-
-This is my personal ZMK fork containing various experimental features used in
-my [zmk-config](https://github.com/urob/zmk-config/). It is regularly rebased
-onto the latest upstream.
+This is my personal ZMK fork containing various experimental features based on [urob's mod] (https://github.com/urob/zmk)
 
 Below is a list of features currently included in the `main` branch _on top of_
 the official ZMK master branch.
-
+### urob's od
 - **mouse** (PR [#778](https://github.com/zmkfirmware/zmk/pull/778)) - official PR + ftc's update + [update to Zephyr 3.2](https://github.com/urob/zmk/tree/mouse-3.2) + some safeguards + enforce hog device fix
 - **swapper** (PR [#1366](https://github.com/zmkfirmware/zmk/pull/1366)) - official PR + fixes needed for Zephyr 3.2
 - **smart-word** (PR [#1451](https://github.com/zmkfirmware/zmk/pull/1451)) - official PR, updated to Zephyr-3.2
@@ -15,17 +12,19 @@ the official ZMK master branch.
 - **adv360pro** (PR [#1454](https://github.com/zmkfirmware/zmk/pull/1454)) - offical PR
 - **zen-tweaks** - [display & battery improvements](https://github.com/caksoylar/zmk/tree/caksoylar/zen-v1%2Bv2) by Cem Aksoylar
 
-In order to use this branch with Github Actions, replace the contents of `west.yml` in
+### saitama's mod
+
+In order to use this branch with GitHub Actions, replace the contents of `west.yml` in
 your `zmk-config/config` directory with the following contents:
 
 ```
 manifest:
   remotes:
-    - name: urob
-      url-base: https://github.com/urob
+    - name: saitama
+      url-base: https://github.com/saitamandl
   projects:
     - name: zmk
-      remote: urob
+      remote: saitama
       revision: main
       import: app/west.yml
   self:

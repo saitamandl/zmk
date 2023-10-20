@@ -27,8 +27,9 @@ manifest:
   projects:
     - name: zmk
       remote: saitama
-      revision: main
+      revision: exp/feats
       import: app/west.yml
   self:
     path: config
+
 ```
